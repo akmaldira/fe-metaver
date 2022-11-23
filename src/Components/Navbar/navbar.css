@@ -8,6 +8,8 @@ nav {
     padding-right: 5rem;
     padding-left: 23rem;
     position: fixed;
+    z-index: 2;
+    gap: 2rem;
 }
 
 .menu-btn-wrapper {
@@ -15,7 +17,7 @@ nav {
 }
 
 .search-wrapper {
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -76,8 +78,14 @@ nav {
     font-weight: 400;
 }
 
+.button-wrapper {
+    display: flex;
+    width: 25rem;
+    justify-content: space-evenly;
+}
+
 .button-wrapper a {
-    width: 10rem;
+    padding: 0 1.8rem;
     height: 3rem;
     border-radius: 20px;
     background-color: #161622;
@@ -104,6 +112,14 @@ nav {
 
     .search-wrapper .icon-search-wrapper {
         height: 2.5rem;
+    }
+
+    .button-wrapper {
+        width: 15rem;
+    }
+
+    .button-wrapper a:nth-child(1) {
+        display: none;
     }
 
     .button-wrapper a {
@@ -142,6 +158,10 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .button-wrapper {
+        width: fit-content;
+    }
 
     .search-wrapper{
         display: none;

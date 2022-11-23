@@ -1,15 +1,50 @@
 .dashboard {
     display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10vh;
     font-size: 3rem;
     background-color: #2D2D3E;
     margin-left: 18rem;
     color: #fff;
+    padding: 0 5rem;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.dashboard .dashboard-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dashboard .dashboard-right-content {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dashboard .dashboard-content .content-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dashboard .dashboard-content .content-list h4 {
+    font-family: 'Gilroy-bold';
+    margin-bottom: 2rem;
+}
+
+.dashboard .dashboard-content .content-list .new-partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 @media only screen and (max-width: 1280px) {
+    .dashboard .dashboard-right-content {
+        display: none;
+    }
     .dashboard {
         margin-left: 15rem;
     }

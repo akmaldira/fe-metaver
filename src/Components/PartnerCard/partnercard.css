@@ -1,0 +1,55 @@
+.partner-card {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.partner-card:hover img {
+    transform: scale(105%);
+}
+
+.partner-card img {
+    width: 13rem;
+    height: 13rem;
+    z-index: 1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.partner-card .partner-detail {
+    background-color: #161622;
+    width: 15rem;
+    height: 12rem;
+    margin-top: -5rem;
+    border-radius: 10px;
+    display: flex;
+    padding: 6rem 1rem 1rem 1.3rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partner-card .partner-detail .partner-name-wrapper {
+    width: 12rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.partner-card .partner-detail .partner-name-wrapper a {
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.partner-card .partner-detail .partner-name-wrapper a:hover {
+    color: wheat;
+}
+
+.partner-card .partner-detail .like-btn {
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+}

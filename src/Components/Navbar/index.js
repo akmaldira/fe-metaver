@@ -19,7 +19,8 @@ const Navbar = ({searchActive}) => {
         <input type="text" placeholder="Search user, collection or community" required></input>
       </div>
       <div className='button-wrapper'>
-        <a href='/'>Connect Discord</a>
+        <a href='/'>Apply</a>
+        <a href='/'>Login Discord</a>
       </div>
     </nav>
   )
