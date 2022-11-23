@@ -1,6 +1,9 @@
 .whitelist {
     display: flex;
     height: 100vh;
+    height: -moz-calc(100% - 100px);
+    height: -webkit-calc(100% - 100px);
+    height: calc(100% + 30px - 100px);
     align-items: center;
     justify-content: center;
     font-size: 3rem;
