@@ -2,9 +2,6 @@
     background-color: #161622;
     width: 18rem;
     height: 100vh;
-    height: -moz-calc(100% - 100px);
-    height: -webkit-calc(100% - 100px);
-    height: calc(100% + 30px - 100px);
     display: flex;
     flex-direction: column;
     z-index: 1;
