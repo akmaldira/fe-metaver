@@ -1,0 +1,145 @@
+.sidebar {
+    background-color: #161622;
+    width: 18rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    padding-left: 4rem;
+    position: fixed;
+}
+
+.close-sidebar-wrapper {
+    display: none;
+}
+
+.sidebar .logo-wrapper {
+    width: 18rem;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 5rem;
+}
+
+.sidebar .logo-wrapper .logo {
+    text-decoration: none;
+    font-family: 'Gilroy';
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.sidebar .menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.sidebar .menu-wrapper .nav-item {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    color: white;
+    opacity: 0.5;
+    gap: 1rem;
+}
+
+.sidebar .menu-wrapper .nav-item:hover {
+    opacity: 1;
+}
+
+.sidebar .menu-wrapper .nav-item .nav-item-icon {
+    font-size: 1.5rem;
+}
+
+.sidebar .menu-wrapper .nav-item.active {
+    opacity: 1;
+}
+
+.sidebar .bottom-wrapper {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar .bottom-wrapper p {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Gilroy';
+}
+
+.sidebar .bottom-wrapper .sidebar-social-media {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.sidebar .bottom-wrapper .sidebar-social-media .social-media-icon {
+    font-size: 2rem;
+    color: white;
+}
+
+@media only screen and (max-width: 1280px) {
+    .sidebar {
+        width: 15rem;
+        padding-left: 2rem;
+    }
+
+    .sidebar .logo-wrapper {
+        width: 15rem;
+        margin-left: 2rem;
+    }
+    
+    .sidebar .menu-wrapper .nav-item {
+        height: 3rem;
+        font-size: 1rem;
+    }
+    
+    .sidebar .bottom-wrapper {
+        margin-right: 2rem;
+    }
+
+    .sidebar .bottom-wrapper .sidebar-social-media .social-media-icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sidebar {
+        margin-left: -15rem;
+        transition: 0.5s;
+    }
+
+    .sidebar.active {
+        margin-left: 0rem;
+    }
+
+    .close-sidebar-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        height: 10vh;
+        margin-right: 2rem;
+    }
+
+    .close-sidebar-wrapper .sidebar-close-btn {
+        width: 100%;
+        height: 5vh;
+        background-color: #2D2D3E;
+        border-radius: 10px;
+    }
+
+    .sidebar .logo-wrapper {
+        margin-bottom: 2rem;
+    }
+}
