@@ -6,12 +6,12 @@
     cursor: pointer;
 }
 
-.partner-card:hover img {
+.partner-card:hover .partner-image {
     transform: scale(105%);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.partner-card img {
+.partner-card .partner-image {
     width: 10rem;
     height: 10rem;
     z-index: 1;
@@ -23,14 +23,13 @@
 .partner-card .partner-detail {
     background-color: #161622;
     width: 100%;
-    height: 12rem;
     margin-top: -5rem;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     padding: 6rem 1rem 1rem 1.3rem;
     overflow: hidden;
-    align-items: center;
-    justify-content: space-between;
+    gap: 0.5rem;
 }
 
 .partner-card .partner-detail .partner-name-wrapper {
@@ -39,19 +38,48 @@
     display: flex;
 }
 
-.partner-card .partner-detail .partner-name-wrapper a {
+.partner-card .partner-detail .partner-name-wrapper p{
     font-family: 'Gilroy';
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
-.partner-card .partner-detail .partner-name-wrapper a:hover {
+.partner-card:hover .partner-detail .partner-name-wrapper p{
     color: rgb(52, 185, 34);;
 }
 
-.partner-card .partner-detail .like-btn {
-    font-size: 30px;
-    cursor: pointer;
+.partner-card .partner-detail .network {
+    font-size: 1rem;
     margin-top: 5px;
+    font-family: 'Gilroy';
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.partner-card .partner-detail .network img {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .partner-card {
+        align-items: flex-start;
+    }
+    .partner-card .partner-detail {
+        padding: 1rem;
+    }
+
+    .partner-card .partner-image {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 1rem;
+    }
+
+    .partner-card .partner-detail div {
+        margin-left: 5rem;
+    }
 }

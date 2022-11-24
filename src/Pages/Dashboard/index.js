@@ -18,14 +18,14 @@ const Dashboard = () => {
         <div className='content-list'>
           <h4>New Partners</h4>
           <div className='partner-list-wrapper'>
-            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
-            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
-            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
-            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
-            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
-            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
-            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
-            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
+            <PartnerCard name={'Solana Monkey'} image={partnerImage} network={'Solana'} slug={'https://akmaldira.dev'}/>
+            <PartnerCard name={'Aptos Monkey'} image={partnerImage} network={'Aptos'} slug={'https://akmaldira.dev'}/>
+            <PartnerCard name={'Aptos Land'} image={partnerImage} network={'Aptos'} slug={'https://akmaldira.dev'}/>
+            <PartnerCard name={'Shi-ka-ku'} image={partnerImage} network={'Aptos'} slug={'https://akmaldira.dev'}/>
+            <PartnerCard name={'Flip Coin'} image={partnerImage} network={'Solana'} slug={'https://akmaldira.dev'}/>
+            <PartnerCard name={'Pontem Monkey'} image={partnerImage} network={'Aptos'} slug={'https://akmaldira.dev'}/>
+            <PartnerCard name={'Solana MBS'} image={partnerImage} network={'Solana'} slug={'https://akmaldira.dev'}/>
+            <PartnerCard name={'Aptos XYZ'} image={partnerImage} network={'Aptos'} slug={'https://akmaldira.dev'}/>
           </div>
         </div>
       </div>
