@@ -4,7 +4,7 @@ import './bigbanner.css';
 const BigBanner = () => {
   return (
     <div className='bigbanner'>
-      <p>Lorem apa apa apa apa apa</p>
+      <p>First web3 platform in multi-chain</p>
     </div>
   )
 }

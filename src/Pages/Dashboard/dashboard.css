@@ -35,10 +35,13 @@
     margin-bottom: 2rem;
 }
 
-.dashboard .dashboard-content .content-list .new-partner-list {
-    display: flex;
-    flex-wrap: wrap;
+.dashboard .dashboard-content .content-list .partner-list-wrapper {
+    width: 100%;
+    margin: 40px auto;
+    display: grid;
+    padding: 10px 0;
     gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(11rem,1fr));
 }
 
 @media only screen and (max-width: 1280px) {

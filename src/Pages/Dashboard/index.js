@@ -2,7 +2,7 @@ import React from 'react';
 import './dashboard.css'
 import BigBanner from '../../Components/BigBanner';
 import SmallBanner from '../../Components/SmallBanner';
-import BestCommunity from '../../Components/BestCommunity';
+import OurSupport from '../../Components/OurSupport';
 import PartnerCard from '../../Components/PartnerCard';
 import partnerImage from '../../assets/images/partnerimage.png';
 
@@ -17,7 +17,9 @@ const Dashboard = () => {
         <BigBanner />
         <div className='content-list'>
           <h4>New Partners</h4>
-          <div className='new-partner-list'>
+          <div className='partner-list-wrapper'>
+            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
+            <PartnerCard name={'Solana Monkey'} image={partnerImage} />
             <PartnerCard name={'Solana Monkey'} image={partnerImage} />
             <PartnerCard name={'Solana Monkey'} image={partnerImage} />
             <PartnerCard name={'Solana Monkey'} image={partnerImage} />
@@ -29,7 +31,7 @@ const Dashboard = () => {
       </div>
       <div className='dashboard-right-content'>
         <SmallBanner className='smallbanner-wrapper' />
-        <BestCommunity />
+        <OurSupport />
       </div>
     </div>
   )

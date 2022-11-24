@@ -1,4 +1,4 @@
-.smallbanner {
+.our-support {
     width: 100%;
     background-color: #161622;
     border-radius: 16px;
@@ -7,14 +7,14 @@
     padding: 1rem;
 }
 
-.smallbanner h5 {
+.our-support h5 {
     font-family: 'Gilroy-bold';
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
 
-.smallbanner .trending-collection-wrapper {
+.our-support .our-support-list-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1rem;
