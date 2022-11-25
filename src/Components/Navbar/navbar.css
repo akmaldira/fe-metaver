@@ -129,14 +129,13 @@ nav {
 
 @media only screen and (max-width: 1024px) {
     nav {
-        padding: 0 2rem 0 0;
+        padding: 0 2rem 0 2rem;
     }
 
     .menu-btn-wrapper {
         display: flex;
-        width: 5rem;
         height: 10vh;
-        font-size: 2rem;
+        font-size: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -158,6 +157,13 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+    nav {
+        padding: 0 1rem 0 1rem;
+    }
+
+    .menu-btn-wrapper {
+        font-size: 2.5rem;
+    }
 
     .button-wrapper {
         width: fit-content;

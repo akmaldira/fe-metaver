@@ -7,7 +7,7 @@ const Whitelist = () => {
     sidebar.className = 'sidebar';
   }
   return (
-    <div className='whitelist' onClick={handleClick}>Whitelist</div>
+    <div className='whitelist' onClick={handleClick}>Soon</div>
   )
 }
 

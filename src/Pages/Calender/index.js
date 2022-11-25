@@ -7,7 +7,7 @@ const Calender = () => {
     sidebar.className = 'sidebar';
   }
   return (
-    <div className='calender' onClick={handleClick}>Calender</div>
+    <div className='calender' onClick={handleClick}>Soon</div>
   )
 }
 
