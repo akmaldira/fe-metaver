@@ -12,7 +12,7 @@ import "./index.css";
 import Sidebar from "./Components/Sidebar";
 import Whitelist from "./Pages/Whitelist";
 import Calender from "./Pages/Calender";
-import Setting from "./Pages/Setting";
+import Admin from "./Pages/Admin";
 import Support from "./Pages/Support";
 
 const AppLayout = () => (
@@ -46,8 +46,8 @@ const router = createBrowserRouter([
         element: <Calender />,
       },
       {
-        path: "/setting",
-        element: <Setting />,
+        path: "/admin",
+        element: <Admin />,
       },
       {
         path: "/support",

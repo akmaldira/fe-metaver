@@ -1,14 +1,14 @@
 import React from 'react'
-import './setting.css'
+import './admin.css'
 
-const Setting = () => {
+const Admin = () => {
   const handleClick = () => {
     const sidebar = document.querySelector('.sidebar');
     sidebar.className = 'sidebar';
   }
   return (
-    <div className='setting' onClick={handleClick}>Setting</div>
+    <div className='admin' onClick={handleClick}>Admin</div>
   )
 }
 
-export default Setting
+export default Admin

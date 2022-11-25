@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, NavLink } from "react-router-dom";
 import * as FaIcons from 'react-icons/fa';
 import * as MdIcons from 'react-icons/md';
-import * as BsIcons from 'react-icons/bs';
 import './sidebar.css';
 
 const Sidebar = () => {
@@ -25,7 +24,7 @@ const Sidebar = () => {
         <br/>
         
         <NavLink className={({isActive}) => (isActive ? "nav-item active" : 'nav-item')} to={'profile'}><MdIcons.MdOutlinePersonOutline className='nav-item-icon'/>Profile</NavLink >
-        <NavLink className={({isActive}) => (isActive ? "nav-item active" : 'nav-item')} to={'setting'}><BsIcons.BsWallet2 className='nav-item-icon'/>My Wallet</NavLink >
+        <NavLink className={({isActive}) => (isActive ? "nav-item active" : 'nav-item')} to={'admin'}><MdIcons.MdOutlineAdminPanelSettings className='nav-item-icon'/>Admin</NavLink >
         <NavLink className={({isActive}) => (isActive ? "nav-item active" : 'nav-item')} to={'support'}><MdIcons.MdOutlineContactSupport className='nav-item-icon'/>Support</NavLink >
       </div>
       <div className='bottom-wrapper'>
